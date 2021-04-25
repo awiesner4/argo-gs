@@ -10,7 +10,7 @@ spec:
     namespace: default
   project: default
   source:
-    path: apps/
+    path: al-apps/
     repoURL: https://github.com/awiesner4/argo-gs.git
     targetRevision: HEAD
   syncPolicy:
