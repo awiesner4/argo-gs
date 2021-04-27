@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kubed
+  namespace: default
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kube-system
+  project: default
+  source:
+    chart: kubed
+    helm:
+      values: |
+        operator:
+          registry: harbor.starburstdata.net/starburstdata
+          repository: kubed
+          tag: v0.13.0-beta.0-44-gd24bd079_linux_amd64
+
+        imagePullSecrets:
+          - name: dockercredentials
+
+        config:
+          clusterName: minikube
+
+        enableAnalytics: false
+    repoURL: https://charts.appscode.com/stable/
+    targetRevision: v0.12.0
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
