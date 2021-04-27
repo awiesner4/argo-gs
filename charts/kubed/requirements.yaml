@@ -1,0 +1,4 @@
+dependencies:
+  - name: kubed
+    version: v0.12.0
+    repository: "https://harbor.starburstdata.net/chartrepo/thirdparty"
