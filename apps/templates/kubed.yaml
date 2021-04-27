@@ -11,7 +11,6 @@ spec:
     namespace: kube-system
   project: default
   source:
-    path: apps/
     chart: kubed
     helm:
       valueFiles:
