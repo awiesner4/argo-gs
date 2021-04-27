@@ -1,0 +1,9 @@
+apiVersion: v2
+description: Starbase Common Helm Chart
+name: kubed
+version: v0.12.0
+type: application
+dependencies:
+  - name: kubed
+    version: v0.12.0
+    repository: "https://harbor.starburstdata.net/chartrepo/thirdparty"
