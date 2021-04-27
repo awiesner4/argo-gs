@@ -14,7 +14,7 @@ spec:
     path: apps/
     chart: kubed
     helm:
-      valuesFiles:
+      valueFiles:
         - kubed-values.yaml
     repoURL: https://charts.appscode.com/stable/
     targetRevision: v0.12.0
