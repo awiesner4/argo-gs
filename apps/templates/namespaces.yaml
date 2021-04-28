@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: cert-manager
   annotations:
-    argocd.argoproj.io/sync-wave: "-3"
+    argocd.argoproj.io/sync-wave: "0"
 
 ---
 
@@ -12,7 +12,7 @@ kind: Namespace
 metadata:
   name: external-dns
   annotations:
-    argocd.argoproj.io/sync-wave: "-3"
+    argocd.argoproj.io/sync-wave: "0"
 
 ---
 
@@ -21,7 +21,7 @@ kind: Namespace
 metadata:
   name: al-is-awesome
   annotations:
-    argocd.argoproj.io/sync-wave: "-3"
+    argocd.argoproj.io/sync-wave: "0"
 
 ---
 
@@ -30,4 +30,4 @@ kind: Namespace
 metadata:
   name: ingress-nginx
   annotations:
-    argocd.argoproj.io/sync-wave: "-3"
+    argocd.argoproj.io/sync-wave: "0"
