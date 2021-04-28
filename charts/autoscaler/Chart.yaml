@@ -1,0 +1,8 @@
+apiVersion: v2
+name: autoscaler
+version: 9.3.0
+type: application
+dependencies:
+  - name: autoscaler
+    version: 9.3.0
+    repository: "https://kubernetes.github.io/autoscaler"
