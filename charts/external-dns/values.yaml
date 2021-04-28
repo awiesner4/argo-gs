@@ -19,7 +19,7 @@ external-dns:
   interval: "60m"
   logLevel: info
   triggerLoopOnEvent: true
-  replicas: 3
+  replicas: 1
 
   securityContext:
     allowPrivilegeEscalation: false
