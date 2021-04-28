@@ -1,4 +1,5 @@
-installCRDs: true
-global:
-  imagePullSecrets:
-    - name: dockercredentials
+cert-manager:
+  installCRDs: true
+  global:
+    imagePullSecrets:
+      - name: dockercredentials

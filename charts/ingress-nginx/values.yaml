@@ -1,4 +1,5 @@
-installCRDs: true
-global:
-  imagePullSecrets:
-    - name: dockercredentials
+ingress-nginx:
+  installCRDs: true
+  global:
+    imagePullSecrets:
+      - name: dockercredentials
