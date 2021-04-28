@@ -1,0 +1,17 @@
+metrics-server:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 50m
+      memory: 64Mi
+
+  priorityClassName: critical
+
+  imagePullSecrets:
+    - name: dockercredentials
+
+  # https://github.com/bitnami/charts/issues/4546
+  apiService:
+    create: true
