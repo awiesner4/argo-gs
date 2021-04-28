@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kubed
+  name: vault-kubed
   annotations:
     argocd.argoproj.io/sync-wave: "0"
   finalizers:
