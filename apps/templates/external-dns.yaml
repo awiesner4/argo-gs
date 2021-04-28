@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: vault-external-dns
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "2"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
